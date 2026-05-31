@@ -1,0 +1,80 @@
+body{
+    margin: 0;
+    padding: 0;
+    background-color:#030712;
+    color:#e2e8f0;
+}
+a{ 
+    text-decoration: none;
+    color:black;
+}
+.centre{
+    margin: 120px;
+}
+.U{
+    font-size: 39px;
+    color: darkslategray;
+    margin-top: -18px;
+    overflow: hidden;
+    display: inline-block;
+    white-space: nowrap;
+    animation: typing 6s steps(29) forwards;
+}
+.S{
+    margin-top: -35px;
+}
+.A{
+    margin-top: -18px;
+}
+.M{
+    margin-top: -18px;
+}
+.B{
+    margin-top: -18px;
+}
+.andy{
+    display: flex;
+}
+img{
+    margin: 100px;
+    padding: 10px;
+    height: 250px;
+    border-radius: 19999px;
+}
+span{
+    color: green;
+    font-size: 30px;
+}
+p{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.button{
+    display: inline-block;
+    padding: 5px 25px;
+    width: 120px;
+    text-align: center;
+
+}
+.button:hover{
+    color: #ffffff;
+}
+button{
+    border-radius: 15px;
+    height:40px ;
+    width: 190px;
+  
+}
+button:hover{
+    background-color: gray;
+}
+
+
+@keyframes typing{
+    from{
+        max-width: 0;
+    }
+    to{
+        max-width: 100%;
+    }
+}
