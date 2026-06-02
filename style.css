@@ -78,3 +78,77 @@ button:hover{
         max-width: 100%;
     }
 }
+
+
+@media screen and(max-width:490px){
+    body{
+background-color: #030712;
+color: white;
+margin: 10px;
+padding: 10px;
+}
+.andy{
+    display: flex;
+    flex-direction: column-reverse;
+}
+img{
+    height: 100px;
+    width: 100px;
+    display: block;
+    margin: auto;
+    border-radius: 19999px;
+}
+.centre{
+    margin:0;
+}
+
+.U{
+    font-size: 30px;
+    margin-top: 0;
+    margin-bottom: 5px;
+    color: darkslategrey;
+    overflow: hidden;
+    display: inline-block;
+    white-space: nowrap;
+    animation: typing 6s steps(29) forwards;
+}
+
+.S,.A,.M,.B{
+margin-top: 0;
+margin-bottom: 5px;
+}
+
+a{
+text-decoration: none;
+color: black;
+}
+p{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.button{
+    display: inline-block;
+    padding: 2px 12px;
+    width:120px ;
+    text-align: center;
+}
+button{
+    border-radius: 15px;
+    height: 30px;
+    width: 140px;
+}
+button:hover{
+    background-color: gray;
+}
+.button:hover{
+color: #ffffff;
+}
+@keyframes typing{
+    from{
+        max-width: 0;
+    }
+    to{
+        max-width: 100%;
+    }
+}
+
+}
