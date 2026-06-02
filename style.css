@@ -80,7 +80,7 @@ button:hover{
 }
 
 
-@media screen and(max-width:490px){
+@media screen and (max-width:490px){
 body{
 background-color: #030712;
 color: white;
