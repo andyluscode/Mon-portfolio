@@ -80,7 +80,7 @@ button:hover{
 }
 
 
-@media screen and (max-width:490px){
+@media screen and (max-width: 490px){
 body{
 background-color: #030712;
 color: white;
@@ -96,7 +96,7 @@ img{
     width: 100px;
     display: block;
     margin: auto;
-    border-radius: 19999px;
+    border-radius: 50%;
 }
 .centre{
     margin:0;
