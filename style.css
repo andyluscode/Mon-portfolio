@@ -1,161 +1,242 @@
-body{
+*{
     margin: 0;
     padding: 0;
-    background-color:#030712;
-    color:#e2e8f0;
+    font-family: -apple-system, sans-serif;
 }
-a{ 
+.header{
+    display: flex;
+    gap: 25px;
+    justify-content: space-between;
+    background-color: #0f172a;
+    padding: 20px;
+}
+.logo{
+    color: white;
+    font-size: 20px;
+    font-weight: 700;
+}
+.cv{
+    margin-left: 15px;
+    margin-top: -3px;
+}
+.btn{
+    padding: 5px;
+    border-radius: 5px;
+    margin-top: -25px;
+}
+ul{
+    display: flex;
+    gap: 20px;
+    list-style: none;
+}
+a{
     text-decoration: none;
-    color:black;
+    color: white;
+}
+a:hover{
+    background: white;
+    color: #0f172a;
+    padding: 5px;
+    border-radius: 5px;
+}
+.milieu{
+    display: flex;
+    padding: 30px;
+    margin: 20px;
+    gap: 270px;
+}
+.ecrit{
+    margin-top: 150px;
+}
+.bouton , .boutons{
+    padding: 5px;
+    border-radius: 10px;
+    border: 1px solid black;
+
+}
+.boutons{
+    background-color: #2563eb;
+    color: white;
+}
+.bouton{
+    background-color: #14b8a6;
+    color: white;
+}
+.costard{
+    width: 250px;
 }
 .centre{
-    margin: 120px;
-}
-.U{
-    font-size: 39px;
-    color: darkslategray;
-    margin-top: -18px;
-    overflow: hidden;
-    display: inline-block;
-    white-space: nowrap;
-    animation: typing 6s steps(29) forwards;
-}
-.S{
-    margin-top: -35px;
-}
-.A{
-    margin-top: -18px;
-}
-.M{
-    margin-top: -18px;
-}
-.B{
-    margin-top: -18px;
-}
-.andy{
     display: flex;
-}
-img{
+    padding: 20px;
     margin: 100px;
-    padding: 10px;
-    height: 250px;
-    border-radius: 19999px;
+    gap: 40px;
 }
-span{
-    color: green;
-    font-size: 30px;
+.moi{
+    width: 250px;
 }
-p{
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+.apropos{
+    width: 700px;
+    height: 150px;
+    background-color:white;
+    padding:15px;
+    border-radius: 8px;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.2);
 }
-
-.button{
-    display: inline-block;
-    padding: 5px 25px;
-    width: 120px;
-    text-align: center;
-
+.competences{
+    padding: 25px;
 }
-.button:hover{
-    color: #ffffff;
-}
-button{
-    border-radius: 15px;
-    height:40px ;
-    width: 190px;
-  
-}
-button:hover{
-    background-color: gray;
-}
-
-
-@keyframes typing{
-    from{
-        max-width: 0;
-    }
-    to{
-        max-width: 100%;
-    }
-}
-
-
-@media screen and (max-width: 495px){
-body{
-background-color: #030712;
-color: white;
-margin: 10px;
-padding: 10px;
-}
-.andy{
+.comp{
     display: flex;
-    flex-direction: column-reverse;
+    gap: 30px;
 }
-img{
-    height: 100px;
-    width: 100px;
+.boite{
+box-shadow: 0 4px 20px rgba(0,0,0,0.2);
+padding: 50px;
+border-radius: 10px;
+transition: 0.9s;
+background-color: #ccfbf1;
+
+}
+.boite:hover{
+  transform: translateY(-5px);  
+}
+.realisation{
+    padding: 20px;
+}
+.projet{
+    display: flex;
+    gap: 20px;
+}
+.projetrecent{
+box-shadow: 0 4px 20px rgba(0,0,0,0.2);
+padding: 50px;
+border-radius: 10px;  
+}
+section{
+    padding: 25px;
+}
+form{
+box-shadow: 0 4px 20px rgba(0,0,0,0.2);
+padding: 50px;
+border-radius: 10px; 
+width: 1100px;  
+height: 300px;
+}
+input {
+    width: 480px;
+    height: 25px;
+    border-radius: 5px;
+    border: 1px solid black;
+}
+textarea{
+    height: 210px;
+    width:1050px;
+}
+.submit{
+    width: 120px;
+    padding: 4px;
+    border-radius: 20px;
+    border: 1px solid black;
+}
+.submit:hover{
+    background-color: #14b8a6;
+    color: #0f172a;
+}
+
+
+@media (max-width:500px) {
+    .header{
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        z-index: 1000;
+    }
+    ul{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .milieu{
+        display: flex;
+        flex-direction: column-reverse;
+        padding-top: 290px;
+    }
+    .costard{
+        width: 170px;
+        display: block;
+        margin: auto;
+    }
+    .ecrit{
+        margin-top: -250px;
+        text-align: center;
+    }
+    .centre{
+        display: flex;
+        flex-direction: column-reverse;
+        padding:10;
+        margin: 15px;
+    }
+    .apropos{
+        width: 290px;
+        height: 100px;
+        text-align: center;
+        display: block;
+        margin: auto;
+    }
+    .moi{
+         display: block;
+        margin: auto;
+    }
+    .competences{
+        text-align: center;
+        padding: 10px;
+        margin-left: 20px;
+    }
+    .comp{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+    }
+    .boite{
+        width: 100px;
+    }
+    .realisation{
+        margin-left: 20px;
+    }
+section{
+    padding: 20px;
+    margin: 20px;
+}
+form{
     display: block;
     margin: auto;
-    border-radius: 50%;
-}
-.centre{
-    margin:0;
-}
-
-.U{
-    font-size: 5vw;
-    margin-top: 0;
-    margin-bottom: 5px;
-    color: darkslategrey;
-    overflow: hidden;
-    display: inline-block;
-    white-space:nowrap;
-    animation: typing 6s steps(29) forwards;
-}
-.id{
-    margin-left: 50px;
-    margin-top: 20px;
-}
-
-.S,.A,.M,.B{
-margin-top: 0;
-margin-bottom: 5px;
-}
-
-a{
-text-decoration: none;
-color: black;
-}
-p{
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-}
-.button{
-    display: inline-block;
-    padding: 2px 12px;
-    width:120px ;
-    text-align: center;
-}
-button{
-    border-radius: 15px;
-    height: 30px;
-    width: 140px;
-}
-button:hover{
-    background-color: gray;
-}
-.button:hover{
-color: #ffffff;
-}
-@keyframes typing{
-    from{
-        max-width: 0;
-    }
-    to{
-        max-width: 100%;
-    }
-}
+    width: 300px;
+    height: 350px;
 
 }
-.id{
-    justify-content: center;
+input{
+    width: 320px;
+    display: block;
+    margin: auto;
+}
+textarea{
+    width: 320px;
+}
+.submit{
+    margin-left: 80px;
+}
+
+footer{
+    background-color: #0f172a;
+    padding: 25px;
+    color: white;
+}
+html{
+    scroll-behavior: smooth;
+}
+
 }
