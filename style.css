@@ -29,11 +29,11 @@ ul{
     gap: 20px;
     list-style: none;
 }
-a{
+.a{
     text-decoration: none;
     color: white;
 }
-a:hover{
+.a:hover{
     background: white;
     color: #0f172a;
     padding: 5px;
@@ -142,9 +142,22 @@ textarea{
     background-color: #14b8a6;
     color: #0f172a;
 }
+.btnprjt{
+    color: #0f172a;
+    text-decoration: none;
+    background-color: #14b8a6;
+    padding: 5px;
+    border-radius: 4px;
+}
+.btnn{
+    padding: 5px;
+    border-radius: 4px;
+    background-color: #14b8a6;
+    border: 1px solid gray;
+}
 
 
-@media (max-width:500px) {
+@media (max-width:414px) {
     .header{
         display: flex;
         flex-direction: column;
@@ -154,6 +167,7 @@ textarea{
         left: 0;
         width: 100%;
         z-index: 1000;
+        height: 200px;
     }
     ul{
         display: flex;
@@ -175,6 +189,12 @@ textarea{
         margin-top: -250px;
         text-align: center;
     }
+    h1{
+        font-size: 25px;
+    }
+    span{
+        color: #14b8a6;
+    }
     .centre{
         display: flex;
         flex-direction: column-reverse;
@@ -182,7 +202,7 @@ textarea{
         margin: 15px;
     }
     .apropos{
-        width: 290px;
+        width: 250px;
         height: 100px;
         text-align: center;
         display: block;
@@ -191,6 +211,7 @@ textarea{
     .moi{
          display: block;
         margin: auto;
+        width: 200px;
     }
     .competences{
         text-align: center;
@@ -200,31 +221,48 @@ textarea{
     .comp{
         display: grid;
         grid-template-columns: repeat(2,1fr);
+        gap: 20px;
     }
     .boite{
-        width: 100px;
+        width: 80px;
+        padding: 25px;
+        gap: 10px;
     }
     .realisation{
         margin-left: 20px;
     }
+    h4{
+        text-align: center;
+    }
+    .projet{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+    .projetrecent{
+        text-align: center;
+        transition: 0.6s;
+    }
+    .projetrecent:hover{
+         transform: translateY(-5px); 
+    }
 section{
-    padding: 20px;
+    padding: 0px;
     margin: 20px;
 }
 form{
     display: block;
     margin: auto;
-    width: 300px;
+    width: 250px;
     height: 350px;
-
 }
 input{
-    width: 320px;
+    width: 280px;
     display: block;
     margin: auto;
 }
 textarea{
-    width: 320px;
+    width: 280px;
 }
 .submit{
     margin-left: 80px;
@@ -235,8 +273,17 @@ footer{
     padding: 25px;
     color: white;
 }
+
 html{
     scroll-behavior: smooth;
 }
-
+.boutons{
+    margin-right: 20px;
+}
+.boutons:hover{
+    cursor: pointer;
+}
+.bouton{
+    cursor: pointer;
+}
 }
