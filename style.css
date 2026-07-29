@@ -155,9 +155,11 @@ textarea{
     background-color: #14b8a6;
     border: 1px solid gray;
 }
+.menu{
+    display: none;
+}
 
-
-@media (max-width:414px) {
+@media (max-width:420px) {
     .header{
         display: flex;
         flex-direction: column;
@@ -167,6 +169,12 @@ textarea{
         left: 0;
         width: 100%;
         z-index: 1000;
+    }
+    body{
+        background-color: #80808033;
+    }
+    .menu{
+        display: none;
     }
     ul{
         display: flex;
@@ -203,8 +211,8 @@ textarea{
     .apropos{
         width: 250px;
         height: 100px;
+        padding: 25px;
         text-align: center;
-        display: block;
         margin: auto;
     }
     .moi{
@@ -214,8 +222,13 @@ textarea{
     }
     .competences{
         text-align: center;
-        padding: 10px;
-        margin-left: 20px;
+        border-radius: 20px;
+        width: 280px;
+        margin: auto;
+        box-shadow: 0 4px 20px rgba(0,0,0,0.2);
+    }
+    #competences{
+        justify-content: center;
     }
     .comp{
         display: grid;
@@ -224,7 +237,9 @@ textarea{
     }
     .boite{
         width: 80px;
-        padding: 25px;
+        margin: auto;
+        padding: 15px;
+        font-size: 13px;
         gap: 10px;
     }
     .realisation{
@@ -241,6 +256,10 @@ textarea{
     .projetrecent{
         text-align: center;
         transition: 0.6s;
+        padding: 25px;
+        width: 250px;
+        margin:auto;
+        box-shadow: 0 4px 20px rgba(0,0,0,0.2);
     }
     .projetrecent:hover{
          transform: translateY(-5px); 
@@ -252,19 +271,19 @@ section{
 form{
     display: block;
     margin: auto;
-    width: 250px;
+    width: 240px;
     height: 350px;
 }
 input{
-    width: 280px;
+    width: 260px;
     display: block;
     margin: auto;
 }
 textarea{
-    width: 280px;
+    width: 260px;
 }
 .submit{
-    margin-left: 80px;
+    margin-left: 70px;
 }
 
 footer{
@@ -272,17 +291,11 @@ footer{
     padding: 25px;
     color: white;
 }
+.bouton{
+    margin-left: 15px;
+}
 
 html{
     scroll-behavior: smooth;
-}
-.boutons{
-    margin-right: 20px;
-}
-.boutons:hover{
-    cursor: pointer;
-}
-.bouton{
-    cursor: pointer;
 }
 }
