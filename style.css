@@ -1,301 +1,194 @@
 *{
     margin: 0;
     padding: 0;
-    font-family: -apple-system, sans-serif;
+    font-family: sans-serif;
 }
-.header{
+
+header{
     display: flex;
     gap: 25px;
     justify-content: space-between;
-    background-color: #0f172a;
-    padding: 20px;
+    background-color: #0b1f3a;
+    padding: 30px;
+    color: #ffffff;
 }
-.logo{
-    color: white;
-    font-size: 20px;
-    font-weight: 700;
-}
-.cv{
-    margin-left: 15px;
-    margin-top: -3px;
-}
-.btn{
-    padding: 5px;
-    border-radius: 5px;
-    margin-top: -25px;
-}
-ul{
+nav ul{
     display: flex;
-    gap: 20px;
+    gap: 25px;
     list-style: none;
 }
-.a{
+nav a {
     text-decoration: none;
-    color: white;
+    color: #ffffff;
 }
-.a:hover{
-    background: white;
-    color: #0f172a;
-    padding: 5px;
-    border-radius: 5px;
+nav a:hover{
+    color: #64ffda;
 }
-.milieu{
-    display: flex;
-    padding: 30px;
-    margin: 20px;
-    gap: 270px;
-}
-.ecrit{
-    margin-top: 150px;
-}
-.bouton , .boutons{
-    padding: 5px;
-    border-radius: 10px;
-    border: 1px solid black;
 
+.accueil{
+    display: flex;
+    padding: 60px;
+    margin: 20px;
+}
+
+.accueil-text{
+    width: 740px;
+}
+.accueil-text span{
+    color: #64ffda;
+}
+
+.accueil-image img{
+    width: 200px;
+    border-radius: 20px;
 }
 .boutons{
-    background-color: #2563eb;
-    color: white;
-}
-.bouton{
-    background-color: #14b8a6;
-    color: white;
-}
-.costard{
-    width: 250px;
-}
-.centre{
     display: flex;
-    padding: 20px;
-    margin: 100px;
-    gap: 40px;
+    gap: 25px;
+    margin-top: 10px;
+
 }
-.moi{
-    width: 250px;
-}
-.apropos{
-    width: 700px;
-    height: 150px;
-    background-color:white;
-    padding:15px;
+.boutons a {
+    text-decoration: none;
+    background-color:transparent;
+    color: #0b1f3a;
+    padding: 5px;
     border-radius: 8px;
-    box-shadow: 0 4px 20px rgba(0,0,0,0.2);
+    border: 1px solid #0a192f;
 }
-.competences{
-    padding: 25px;
-}
-.comp{
+
+.apropos{
     display: flex;
+    padding: 25px;
     gap: 30px;
 }
-.boite{
-box-shadow: 0 4px 20px rgba(0,0,0,0.2);
-padding: 50px;
-border-radius: 10px;
-transition: 0.9s;
-background-color: #ccfbf1;
 
+#apropos h2{
+    text-align: center;
 }
-.boite:hover{
-  transform: translateY(-5px);  
+.apropos-text{
+    width: 600px;
 }
-.realisation{
+
+.apropos-image img{
+    width: 200px;
+    border-radius: 20px;
+}
+
+#competences{
+    box-shadow: 0 2px 6px rgba(0,0,0,0.3);
     padding: 20px;
+    width:850px;
+    margin: auto;
+    border-radius: 20px;
+    border: 1px solid #80808033;
 }
-.projet{
+h3{
+    margin-top: 10px;
+}
+#competences h2{
+    text-align: center;
+}
+#competences a{
+    text-decoration: none;
+    color: #0b1f3a;
+}
+.competence-boite{
     display: flex;
     gap: 20px;
+    margin-top: 10px;
 }
-.projetrecent{
-box-shadow: 0 4px 20px rgba(0,0,0,0.2);
-padding: 50px;
-border-radius: 10px;  
+ .competence-boite p {
+   box-shadow: 0 2px 6px rgba(0,0,0,0.3);
+   padding: 8px; 
+   border-radius: 8px; 
+   background-color: #80808033;
+   transition: 0.4s;
 }
-section{
-    padding: 25px;
+.competence-boite p:hover{
+    transform: translateY(-8px);
 }
-form{
-box-shadow: 0 4px 20px rgba(0,0,0,0.2);
-padding: 50px;
-border-radius: 10px; 
-width: 1100px;  
-height: 300px;
+#competences h5{
+    margin-top:20px;
 }
-input {
-    width: 480px;
-    height: 25px;
-    border-radius: 5px;
-    border: 1px solid black;
+#projet{
+    padding: 20px;
 }
-textarea{
-    height: 210px;
-    width:1050px;
+#projet h2{
+    text-align: center;
 }
-.submit{
-    width: 120px;
-    padding: 4px;
-    border-radius: 20px;
-    border: 1px solid black;
+
+.projet-fait{
+    display: flex;
+    gap: 25px;
 }
-.submit:hover{
-    background-color: #14b8a6;
-    color: #0f172a;
+.projet-carte{
+  margin-top: 20px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.3); 
+  text-align: center;
+  border-radius: 20px;
+  padding: 22px;
+  transition: 0.6s;
 }
-.btnprjt{
-    color: #0f172a;
-    text-decoration: none;
-    background-color: #14b8a6;
+.projet-carte:hover{
+    transform: translateY(-7px);
+}
+.bouton a{
+  text-decoration: none;
+    background-color:transparent;
+    color: #0b1f3a;
     padding: 5px;
-    border-radius: 4px;
-}
-.btnn{
-    padding: 5px;
-    border-radius: 4px;
-    background-color: #14b8a6;
-    border: 1px solid gray;
-}
-.menu{
-    display: none;
-}
-
-@media (max-width:420px) {
-    .header{
-        display: flex;
-        flex-direction: column;
-        gap: 20px;
-        position: fixed;
-        top: 0;
-        left: 0;
-        width: 100%;
-        z-index: 1000;
-    }
-    body{
-        background-color: #80808033;
-    }
-    .menu{
-        display: none;
-    }
-    ul{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .milieu{
-        display: flex;
-        flex-direction: column-reverse;
-        padding-top: 290px;
-    }
-    .costard{
-        width: 170px;
-        display: block;
-        margin: auto;
-    }
-    .ecrit{
-        margin-top: -250px;
-        text-align: center;
-    }
-    h1{
-        font-size: 25px;
-    }
-    span{
-        color: #14b8a6;
-    }
-    .centre{
-        display: flex;
-        flex-direction: column-reverse;
-        padding:10;
-        margin: 15px;
-    }
-    .apropos{
-        width: 250px;
-        height: 100px;
-        padding: 25px;
-        text-align: center;
-        margin: auto;
-    }
-    .moi{
-         display: block;
-        margin: auto;
-        width: 200px;
-    }
-    .competences{
-        text-align: center;
-        border-radius: 20px;
-        width: 280px;
-        margin: auto;
-        box-shadow: 0 4px 20px rgba(0,0,0,0.2);
-    }
-    #competences{
-        justify-content: center;
-    }
-    .comp{
-        display: grid;
-        grid-template-columns: repeat(2,1fr);
-        gap: 20px;
-    }
-    .boite{
-        width: 80px;
-        margin: auto;
-        padding: 15px;
-        font-size: 13px;
-        gap: 10px;
-    }
-    .realisation{
-        margin-left: 20px;
-    }
-    h4{
-        text-align: center;
-    }
-    .projet{
-        display: flex;
-        flex-direction: column;
-        text-align: center;
-    }
-    .projetrecent{
-        text-align: center;
-        transition: 0.6s;
-        padding: 25px;
-        width: 250px;
-        margin:auto;
-        box-shadow: 0 4px 20px rgba(0,0,0,0.2);
-    }
-    .projetrecent:hover{
-         transform: translateY(-5px); 
-    }
-section{
-    padding: 0px;
-    margin: 20px;
-}
-form{
-    display: block;
-    margin: auto;
-    width: 240px;
-    height: 350px;
-}
-input{
-    width: 260px;
-    display: block;
-    margin: auto;
-}
-textarea{
-    width: 260px;
-}
-.submit{
-    margin-left: 70px;
-}
-
-footer{
-    background-color: #0f172a;
-    padding: 25px;
-    color: white;
+    border-radius: 8px;
+    border: 1px solid #0a192f;  
 }
 .bouton{
-    margin-left: 15px;
+    margin-top: 20px;
+}
+#contact h2, #contact p{
+    text-align: center;
+}
+form{
+box-shadow: 0 2px 6px rgba(0,0,0,0.3); 
+padding: 30px;
+width: 850px;
+margin: auto;
+border-radius: 20px;
+height: 400px;
+text-align: center;
+}
+.contact-formulaire{
+    margin-top: 20px;
+}
+input{
+    width: 400px;
+    height: 30px;
+    border-radius: 6px;
+    border: 1px solid #0b1f3a;
+}
+textarea{
+    height: 320px;
+    width: 800px;
+    border-radius: 20px;
+    border: 1px solid #0b1f3a;
+}
+button{
+    background-color:transparent;
+    color: #0b1f3a;
+    padding: 5px;
+    border-radius: 8px;
+    border: 1px solid #0a192f;
+}
+button:hover{
+    background-color: #0b1f3a;
+    color: #ffffff;
+}
+footer{
+    background-color: #0b1f3a;
+    color: #ffffff;
+    padding: 25px;
+    text-align: center;
 }
 
 html{
     scroll-behavior: smooth;
-}
 }

@@ -1,117 +1,150 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Andy Lusamba- Portfolio</title>
     <link rel="stylesheet" href="style.css">
-     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
 </head>
 <body>
-   <div class="header">
-    <div class="logo">
-        <h5>Andy Lusamba</h5>
-    </div>
-    <div class="menu">
-                <i class="bi bi-list"></i>
-            </div>
-    <div class="navbar">
-        <ul>
-            <li><a href="#accueil" class="a">Accueil</a></li>
-            <li><a href="#apropos" class="a">A propos de moi</a></li>
-            <li><a href="#competences" class="a">Competences</a></li>
-            <li><a href="#projets" class="a">Projets</a></li>
-            <li><a href="#contact" class="a">Contact</a></li>
-        </ul>
-    </div>
-   </div> 
-   <div class="milieu" id="accueil">
-    <div class="ecrit">
-        <h1>Salut, moi c'est <span>Andy Lusamba</span></h1>
-        <p> Etudiant en 2 eme annee d'informatique et developpeur web junior <br> Je suis passionne par les nouvelles technologies, j'aime apprendre et je passe surtout mon temps a coder </p><br>
-        
-         <a href="CURRICULUM VITAE.pdf"><button class="boutons">Voir le cv</button></a><a href="#contact"><button class="bouton">Me contacter</button></a>
-    </div>
-    <div class="photo">
-        <img class="costard" src="andycostard.jpeg" alt="photo ord">
-    </div>
-   </div>
+    <header>
+        <div class="logo">
+           <h4>Andy Lusamba</h4>
+        </div>
 
-   <div class="centre">
-    <div class="img">
-        <img class="moi"src="andydev.jpeg" alt="moi">
-    </div>
-    <div class="apropos" id="apropos">
-        <h4>A propos de moi</h4>
-        <p>Je suis Andy Lusamba developpeur web junior passionne par les nouvelles technologies j'aime apprendre, cuisiner, travailler en equipe.</p>
-    </div>
-   </div>
-   <section id="competences">
-   <div class="competences" id="competences">
-    <h4>Mes competences</h4><br>
-   <p>souvent oriente</p><br>
-   <div class="comp">
-    <div class="boite">
-        <p>HTML</p>
-        <p>Niveau: eleve</p>
-    </div>
-     <div class="boite">
-        <p>CSS</p>
-        <p>Niveau:Moyen</p>
-    </div>
-     <div class="boite">
-        <p>JavaScript</p>
-        <p>Niveau: Moyen</p>
-    </div>
-     <div class="boite">
-        <p>PHP</p>
-        <p>Niveau: Moyen</p>
-    </div>
-     <div class="boite">
-        <p>SQL</p>
-        <p>Niveau: Moyen</p>
-    </div>
-     <div class="boite">
-        <p>Java</p>
-        <p>Niveau: Moyen</p>
-    </div>
-   </div>
-   </div>
-   </section>
-    <div class="realisation" id="projets">
-         <h4>j'ai realise pas mal de projets mais les plus recents sont:</h4><br>
-    <div class="projet">
-        <div class="projetrecent">
-            <h4>Premier projet realise en L1</h4>
-            <p>Syteme de gestion informatise de stock dans une pharmacie</p>
-            <p>Outils utilises:Vs code,html,css,js</p><br>
-            <button class="btnn"><a href="" class="btnprjt">Voir le projet </a></button>
-            
+        <div class="nav">
+            <nav>
+                <ul>
+                     <li><a href="#accueil">Accueil</a></li>
+                     <li><a href="#apropos">A propos de moi</a></li>
+                     <li><a href="#competences">Competences</a></li>
+                     <li><a href="#projet">Projets</a></li>
+                     <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
         </div>
-         <div class="projetrecent">
-            
-        </div>
-         <div class="projetrecent">
-            
-        </div>
-    </div>
-    </div>
-   <section>
-    <h4 id="contact" class="contact">Contact</h4>
-    <p>Vous voulez en savoir plus sur moi?Envoyez moi un message</p>
-    <form action="">
-        <label action="mailto:andylusamba16@gmail.com">Nom</label>
-        <input type="text" placeholder="Entrez votre nom">
-        <label for="">Email</label>
-        <input type="email" placeholder="Entrez votre email"><br><br>
-        <label for="">Message</label><br>
-        <textarea name="" id="" placeholder="Ecrivez votre message"></textarea><br>
-        <button class="submit">Envoyez</button>
-    </form>
-   </section>
-   <footer>
-    ©2026 Andy Lusamba- Tous droits reserves
-   </footer>
-   <script src="script.js"></script>
+    </header>
+    <main>
+
+        <section id="accueil" class="accueil">
+            <div class="accueil-text">
+                 <h1>Salut, Je suis <span>Andy Lusamba</span></h1>
+                 <h3>Etudiant en 2eme annee d'informatique</h3>
+                 <p>Je suis developpeur junior web, je developpe des sites webs dynamiques et je me specialise en ingenierie logicielle et reseau informatique</p>
+
+              <div class="boutons">
+                 <a href="CURRICULUM VITAE.pdf">Voir mon cv</a>
+                 <a href="#projet">Voir mes projets</a>
+              </div>
+            </div>
+
+             <div class="accueil-image">
+                 <img src="andycostard.jpeg" alt="Andy Lusamba">
+            </div>
+
+        </section>
+
+        <section id="apropos">
+         <h2>A propos de moi</h2>
+            <div class="apropos">
+               <div class="apropos-text">
+                    <p>Je m'appelle Andy Lusamba Mpandajila, etudiant en deuxieme annee d'informatique. Passione par les technologies,le developpement web, mobile et le reseau, j'aime concevoir des sites webs pendant mes heures libres. Je continue a developper mes competences en programmation, en ingenierie logicielle et en reseaux informatiques afin de devenir professionel pour oeuvrer au sein de differentes entreprises. </p>
+                 <div class="boutons">
+                      <a href="">Me contacter</a>
+                 </div>
+               </div>
+             <div class="apropos-image">
+                 <img src="andydev.jpeg" alt="Andy Lusamba">
+             </div>
+            </div>
+        </section>
+
+        <section id="competences">
+            <h2>Mes competences</h2>
+            <div class="competence-carte">
+                <h3>Les langages</h3>
+                <div class="competence-boite">
+                    <p>HTML</p>
+                    <P>CSS:</P>
+                    <p>JavaScript</p>
+                    <p>PHP</p>
+                    <p>JAVA</p>
+                    <p>Python</p>
+                </div>
+            </div>
+             <div class="competence-carte">
+                <h3>Les outils</h3>
+                <div class="competence-boite">
+                    <p>Vs Code</p>
+                    <P>Github</P>
+                    <p>Git</p>
+                    <p>Codeblocks</p>
+                </div>
+            </div>
+             <div class="competence-carte">
+                <h3>Les Competences personnelles</h3>
+                <div class="competence-boite">
+                    <p>Accueillant</p>
+                    <P>Travail en equipe</P>
+                    <p>Autonomie</p>
+                    <p>Souriant</p>
+                    <p>Esprit d'analyse</p>
+                    <p>Extravertie</p>
+                </div>
+            </div>
+            <h5>Pour voir mes niveau dans chacune des competences,<a href="CURRICULUM VITAE.pdf">Visitez mon cv</a></h5>
+        </section>
+
+        <section id="projet">
+            <h2>Mes Projets</h2>
+            <div class="projet-fait">
+                <div class="projet-carte">
+                    <h3>Gestion de pharmacie</h3>
+                    <p>Application web permettant de gerer les medicaments,les ventes et le stock</p>
+                    <p>Technologies:HTML, CSS, JavaScript</p>
+                    <div class="bouton">
+                        <a href="#">Voir le projet</a>
+                    </div>
+                </div>
+                <div class="projet-carte">
+                    <h3>Gestion de pharmacie</h3>
+                    <p>Application web permettant de gerer les medicaments,les ventes et le stock</p>
+                    <p>Technologies:HTML, CSS, JavaScript</p>
+                    <div class="bouton">
+                        <a href="#">Voir le projet</a>
+                    </div>
+                </div>
+                <div class="projet-carte">
+                    <h3>Gestion de pharmacie</h3>
+                    <p>Application web permettant de gerer les medicaments,les ventes et le stock</p>
+                    <p>Technologies:HTML, CSS, JavaScript</p>
+                    <div class="bouton">
+                        <a href="#">Voir le projet</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact">
+            <h2>Contact</h2>
+            <p>Vous voulez en savoir plus sur moi, le formulaire est la, contactez moi je reponds en un laps de temps</p>
+            <div class="contact-formulaire">
+                <form action="">
+                    <input type="text" placeholder="Votre nom">
+                    <input type="email" placeholder="Votre email"><br><br>
+                    <textarea placeholder="Votre message">
+
+                    </textarea><br>
+                    <div class="bouton-form">
+                        <button>Envoyer le message</button>
+                    </div>
+                </form>
+            </div>
+        </section>
+
+        <footer>
+            2026 Andy Lusamba- Tous droits reserves
+        </footer>
+    </main>
 </body>
 </html>
