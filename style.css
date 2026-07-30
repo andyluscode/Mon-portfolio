@@ -192,3 +192,106 @@ footer{
 html{
     scroll-behavior: smooth;
 }
+
+@media (max-width:414px) {
+
+    header{
+        display: flex;
+        flex-direction: column;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 414px;
+        z-index: 1000;
+    }
+    nav{
+        display: flex;
+        justify-content: center;
+    }
+   nav ul{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        padding: 0;
+        margin: 0;
+    }
+    .accueil{
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+        margin-top: 270px;
+    }
+    .accueil-image img{
+        width: 150px;
+    }
+    .accueil-text{
+        font-size: 15px;
+        text-align: center;
+        width: 300px;
+    }
+    .accueil-text h1 , .accueil-text h3{
+        font-size: larger;
+    }
+    .boutons{
+        margin-left: 50px;
+        gap: 10px;
+    }
+
+    .boutons a{
+        width: 85px;
+        padding: 9px;
+        font-size: 10px;
+    }
+
+    .apropos{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+    .apropos-text{
+        width: 350px;
+        text-align: center;
+        font-size: 15px;
+    }
+    .apropos .boutons{
+        margin-left: 130px;
+    }
+    .apropos-image img{
+        width: 180px;
+    }
+.competence-boite{
+    display: flex;
+    flex-direction: column;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+ #competences{
+ width: 300px;
+ }
+
+ .projet-fait{
+    display: flex;
+    flex-direction: column;
+ }
+ #contact p{
+    text-align: center;
+    font-size: 15px;
+ }
+ form{
+    width: 300px;
+    height: 385px;
+ }
+ input{
+    width: 270px;
+    margin-bottom: 10px;
+ }
+ textarea{
+    width: 270px;
+    height: 270px;
+ }
+ footer{
+    margin-top: 40px;
+ }
+
+
+}
